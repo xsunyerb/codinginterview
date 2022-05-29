@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-*Time complexity*: Since for every element of the input array, we are calculating the sum of its next ‘K’ elements, the time complexity of the above algorithm will be O(N∗K)O(N*K)O(N∗K) where ‘N’ is the number of elements in the input array.
+*Time complexity*: Since for every element of the input array, we are calculating the sum of its next ‘K’ elements, the time complexity of the above algorithm will be O(N∗K) where ‘N’ is the number of elements in the input array.
 
 Can we find a better solution? Do you see any inefficiency in the above approach?
 
@@ -69,7 +69,7 @@ The inefficiency is that for any two consecutive subarrays of size ‘5’, the 
 
 As you can see, there are four overlapping elements between the subarray (indexed from 0-4) and the subarray (indexed from 1-5). Can we somehow reuse the sum we have calculated for the overlapping elements?
 
-The efficient way to solve this problem would be to visualize each subarray as a sliding window of ‘5’ elements. This means that we will slide the window by one element when we move on to the next subarray. To reuse the sum from the previous subarray, we will subtract the element going out of the window and add the element now being included in the sliding window. This will save us from going through the whole subarray to find the sum and, as a result, the algorithm complexity will reduce to O(N)O(N)O(N).
+The efficient way to solve this problem would be to visualize each subarray as a sliding window of ‘5’ elements. This means that we will slide the window by one element when we move on to the next subarray. To reuse the sum from the previous subarray, we will subtract the element going out of the window and add the element now being included in the sliding window. This will save us from going through the whole subarray to find the sum and, as a result, the algorithm complexity will reduce to O(N).
 
 ![alt text](img02.svg)
 
