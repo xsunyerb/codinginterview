@@ -13,3 +13,4 @@ To help candidates with that, we've come up with a list of 16 patterns for codin
 1. [Sliding window](./01_SlidingWindow/README.md)
 1. [Two pointers](./02_TwoPointers/README.md)
 1. [Fast and slow pointers](./03_FastAndSlowPointers/README.md)
+1. [Merge intervals](./04_MergeIntervals/README.md)
